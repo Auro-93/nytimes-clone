@@ -110,7 +110,7 @@ Distributed under the MIT License. See `LICENSE` for more information.
 
 Project Repository: [nytimes-clone](https://github.com/Auro-93/nytimes-clone)
 
-Project Website: [NyTimes clone- Netlify](https://life-quality-app.netlify.app/)
+Project Website: [NyTimes clone- Netlify](https://nytimes-clone.netlify.app/)
 
 Portfolio: [aurodev-web-developer-portfolio](https://aurodev-web-developer-portfolio.netlify.app/)
 
