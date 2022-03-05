@@ -14,6 +14,7 @@ export const Article = ({ article, articleType }) => {
   const { title, abstract, date, section, byline, img, url, baseUrlImg } =
     article;
 
+  // if article has not title or abstract don't display it
   if (!title || !abstract) {
     return null;
   }

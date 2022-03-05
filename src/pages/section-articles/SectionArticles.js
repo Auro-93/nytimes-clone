@@ -7,6 +7,8 @@ export const SectionArticles = () => {
   const { section } = useParams();
 
   const apiKey = process.env.REACT_APP_NYTIMES_API_KEY;
+
+  // request to displays articles currently on a specific section of nytimes website
   let {
     data: articles,
     loading,

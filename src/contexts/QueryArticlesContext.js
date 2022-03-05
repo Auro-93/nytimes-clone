@@ -9,6 +9,8 @@ export const QueryArticlesProvider = ({ children }) => {
   const [page, setPage] = useState(1);
 
   const apiKey = process.env.REACT_APP_NYTIMES_API_KEY;
+
+  // search articles based on user search-term request
   let {
     data: articles,
     totalArticles,

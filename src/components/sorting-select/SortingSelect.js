@@ -12,6 +12,7 @@ export const SortingSelect = () => {
     setPage(1);
   };
 
+  // select sorting options array
   let options = [
     {
       value: "relevance",

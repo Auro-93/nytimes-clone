@@ -6,6 +6,7 @@ import styles from "./CloseIcon.module.css";
 export const CloseIcon = () => {
   const { isSidebarOpen, setIsSidebarOpen } = useContext(SidebarContext);
 
+  // close sidebar on close icon click
   const closeSidebar = () => {
     setIsSidebarOpen(false);
   };

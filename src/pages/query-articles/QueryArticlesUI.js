@@ -59,6 +59,7 @@ const QueryArticlesUI = ({ searchTerm, error, loading, articles }) => {
           );
         })}
       </div>
+
       {articles.response?.docs.length > 0 && <PaginationUI />}
     </div>
   );

@@ -12,19 +12,27 @@ export const SearchForm = () => {
 
   const [searchTerm, setSearchTerm] = useState("");
 
+  // search articles handle submit
   const handleSubmit = (e) => {
     e.preventDefault();
 
+    //if input is empty return
     if (!searchTerm) return;
 
+    // lower casing and trimming input search term
     let formattedSearchTerm = searchTerm.toString().toLowerCase().trim();
 
+    //clean search bar value
     setSearchTerm("");
 
+    /* For each submit return to the first page. 
+    Important if, in a previous search, we were on a different page from the first*/
     setPage(1);
 
+    // for mobile screen: close sidebar when submit
     setIsSidebarOpen(false);
 
+    //pass search term parameters to the url of query articles page and navigate to it
     navigate(`/query/${formattedSearchTerm}`);
   };
 
@@ -36,6 +44,7 @@ export const SearchForm = () => {
   const input = useRef(null);
 
   useEffect(() => {
+    // input always focused after component mounting
     input.current.focus();
   }, []);
 

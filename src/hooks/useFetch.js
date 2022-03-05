@@ -2,16 +2,20 @@ import React, { useEffect, useState } from "react";
 import axios from "axios";
 import { smoothScroll } from "../utilities/scrolling";
 
+/*Fetch custom hook for all the API calls*/
+
 const useFetch = (url, querySearch = false) => {
   const [totalArticles, setTotalArticles] = useState(0);
   const [data, setData] = useState([]);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState("");
 
+  // to cancel requests when component is unmounted
   const source = axios.CancelToken.source();
 
   const handleFetch = async (url) => {
     setData([]);
+    smoothScroll(0);
     setLoading(true);
 
     try {
@@ -19,9 +23,7 @@ const useFetch = (url, querySearch = false) => {
       if (response) {
         setLoading(false);
         setError("");
-        smoothScroll(0);
 
-        console.log(response.data);
         setData(response.data);
 
         if (querySearch === true) {
@@ -31,7 +33,6 @@ const useFetch = (url, querySearch = false) => {
     } catch (error) {
       setLoading(false);
       setData([]);
-      smoothScroll(0);
 
       if (error.response) {
         if (error.response.status === 404) {

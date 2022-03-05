@@ -21,6 +21,7 @@ export const PaginationUI = () => {
         disabledClass={styles.disabled}
         activePage={page}
         itemsCountPerPage={10}
+        //totalItemsCount : we can only retrieve a maximum of 200 articles from nytimes API
         totalItemsCount={totalArticles >= 200 ? 200 : totalArticles}
         pageRangeDisplayed={isDesktopOrLaptop ? 10 : 5}
         onChange={handlePageChange}

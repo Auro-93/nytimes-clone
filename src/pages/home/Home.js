@@ -5,6 +5,8 @@ import useFetch from "../../hooks/useFetch";
 
 export const Home = () => {
   const apiKey = process.env.REACT_APP_NYTIMES_API_KEY;
+
+  // request to display articles currently on nytimes homepage
   let {
     data: articles,
     loading,

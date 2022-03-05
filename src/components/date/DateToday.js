@@ -8,6 +8,7 @@ export const DateToday = () => {
 
   const today = new Date();
 
+  // return article published date with the format "...time ago"
   return (
     <div className={styles.date}>
       <p className={styles.date_text}>

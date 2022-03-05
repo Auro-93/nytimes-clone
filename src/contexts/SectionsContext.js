@@ -7,6 +7,7 @@ export const SectionsProvider = ({ children }) => {
   const [navSections, setNavSections] = useState([]);
 
   useEffect(() => {
+    // setting articles sections data for navbar and footer
     setNavSections(sectionsData);
   }, []);
 

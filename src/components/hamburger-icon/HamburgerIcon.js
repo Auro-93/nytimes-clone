@@ -6,6 +6,7 @@ import styles from "./HamburgerIcon.module.css";
 export const HamburgerIcon = () => {
   const { isSidebarOpen, setIsSidebarOpen } = useContext(SidebarContext);
 
+  //open sidebar on hamburger icon click
   const openSidebar = () => {
     setIsSidebarOpen(true);
   };

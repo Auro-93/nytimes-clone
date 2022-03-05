@@ -10,12 +10,15 @@ import { FooterItemsRow1, FooterItemsRow2 } from "..";
 export const Footer = () => {
   const [footerItems1, setFooterItems1] = useState([]);
   const [footerItems2, setFooterItems2] = useState([]);
+  // to manage opening and closure of footer first row submenus on mobile/tablet screens
   const [current, setCurrent] = useState({ element: "", open: false });
 
   useEffect(() => {
+    //first footer row
     setFooterItems1(footerCategories);
   }, []);
 
+  //second footer row
   useEffect(() => {
     setFooterItems2(footerLastRowData);
   }, []);

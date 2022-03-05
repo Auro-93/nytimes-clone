@@ -20,6 +20,7 @@ export const Header = () => {
   const header = useRef(null);
 
   useEffect(() => {
+    // dynamically retrieve header_1 height to set sidebar absolute position below it
     if (header !== null) {
       let height = header.current.clientHeight;
       setHeaderHeight(height);

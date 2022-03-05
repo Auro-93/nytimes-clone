@@ -1,3 +1,4 @@
+//footer first row static data
 export const footerCategories = [
   {
     section: "NEWS",
@@ -86,6 +87,7 @@ export const footerCategories = [
   },
 ];
 
+// footer second row static data
 export const footerLastRowData = [
   "© 2022 The New York Times Company",
   "NYTCo",

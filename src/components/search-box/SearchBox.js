@@ -6,6 +6,7 @@ import { BsSearch } from "react-icons/bs";
 export const SearchBox = () => {
   const [searchBarVisible, setSearchBarVisible] = useState(false);
 
+  // toggle search input visibility on search icon click
   const toggleSearchBar = () => {
     setSearchBarVisible(!searchBarVisible);
   };

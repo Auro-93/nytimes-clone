@@ -8,6 +8,7 @@ export const Navbar = () => {
 
   const [isScrolling, setIsScrolling] = useState(false);
 
+  // set navbar to position:fixed when scrolling
   const handleScroll = () => {
     if (window.pageYOffset > 140) {
       setIsScrolling(true);
