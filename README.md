@@ -6,6 +6,9 @@
     A partial clone of The New York Times website, built with React and New York Times API
   </p>
 
+  <br>
+  <br>
+
   <a href="https://github.com/Auro-93/nytimes-clone">
     <img src="src/assets/screenshots/query-articles.jpg" alt="nytimes-clone-screenshot">
   </a>
@@ -41,9 +44,9 @@ User can explore three main routes:
 <ul>
 <li>the <strong>home page</strong>, which contains most relevant articles currently on the first page; </li>
 
-<li>specific<strong>sections</strong> like Politics, Health, Arts, which display most relevant articles of such categories; </li>
+<li>specific <strong>sections</strong> like Politics, Health, Arts, which display most relevant articles of such categories; </li>
 
-<li><strong>search section</strong>, which displays paginated articles based on the keyword typed by the user in the search-bar. Articles can be sorted by "relevance", "newest" and "oldest"</li>
+<li><strong>search section</strong>, which displays paginated articles based on the keyword typed by the user in the search-bar. Articles can be sorted by "relevance", "newest" and "oldest".</li>
 </ul>
 
 ### Built With
