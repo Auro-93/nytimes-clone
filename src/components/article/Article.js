@@ -19,7 +19,7 @@ export const Article = ({ article, articleType }) => {
     return null;
   }
   return (
-    <AnimationOnScroll offset={500} animateIn="animate__fadeIn">
+    <AnimationOnScroll offset={500} duration={0.5} animateIn="animate__fadeIn">
       <animated.a style={fadeIn} href={url} target="_blank">
         <article
           className={` ${
